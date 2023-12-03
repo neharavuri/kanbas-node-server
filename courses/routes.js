@@ -13,6 +13,7 @@ function CourseRoutes(app) {
     const { id } = req.params;
     Database.courses = Database.courses
       .filter((c) => c._id !== id);
+      console.log("delete");
     res.sendStatus(204);
   });
   app.put("/api/courses/:id", (req, res) => {
