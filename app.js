@@ -8,7 +8,7 @@ import cors from "cors";
 import "dotenv/config";
 import UserRoutes from "./users/routes.js";
 import "./node_modules/dotenv/config.js";
-mongoose.connect("mongodb://localhost:27017/kanbas");
+mongoose.connect("mongodb+srv://<username>:<password>@kanbas.xggi1tt.mongodb.net/?retryWrites=true&w=majority" || "mongodb://localhost:27017/kanbas");
 const app = express();
 app.use(express.json());
 app.use(
