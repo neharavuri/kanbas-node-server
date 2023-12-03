@@ -12,7 +12,7 @@ mongoose.connect("mongodb+srv://neha:ravuri@kanbas.xggi1tt.mongodb.net/kanbas?re
 const app = express();
 app.use(express.json());
 app.use(
-  cors({ credentials: true, origin: process.env.FRONTEND_URL, origin: true })
+  cors({ credentials: true, origin: true })
 );
 const sessionOptions = {
     secret: "any string",
