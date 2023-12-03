@@ -43,7 +43,7 @@ function UserRoutes(app) {
     res.json(currentUser);
   };
   const account = async (req, res) => {
-    req.session['currentUser']
+    res.json(req.session['currentUser']);
   };
 
   const signout = (req, res) => {
